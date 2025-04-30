@@ -1,0 +1,27 @@
+﻿@page "/form"
+@rendermode InteractiveServer
+
+
+<h3>Form</h3>
+
+<input @onchange="InputChanged" />
+<p>@message</p>
+
+<input @bind="text" />
+<button @onclick="ClearInput">Clear</button>
+<p>@text</p>
+
+@code {
+    string message = "";
+    string text = "";
+
+    void InputChanged(ChangeEventArgs e)
+    {
+        message = (string)e.Value;
+    }
+
+    void ClearInput()
+    {
+        text = string.Empty;
+    }
+}

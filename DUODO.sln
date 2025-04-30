@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35825.156
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DUODO", "DUODO.csproj", "{9F05FF69-F5E2-4335-BB2D-C314A50B5166}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DuoDoBlazor", "DuoDoBlazor\DuoDoBlazor.csproj", "{BB9B11A5-C50E-3C4F-93B8-20AA541048DF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9F05FF69-F5E2-4335-BB2D-C314A50B5166}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9F05FF69-F5E2-4335-BB2D-C314A50B5166}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9F05FF69-F5E2-4335-BB2D-C314A50B5166}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9F05FF69-F5E2-4335-BB2D-C314A50B5166}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB9B11A5-C50E-3C4F-93B8-20AA541048DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB9B11A5-C50E-3C4F-93B8-20AA541048DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB9B11A5-C50E-3C4F-93B8-20AA541048DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB9B11A5-C50E-3C4F-93B8-20AA541048DF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0AE490C7-44C2-4213-A0F6-F70A0EC1A830}
+	EndGlobalSection
+EndGlobal
