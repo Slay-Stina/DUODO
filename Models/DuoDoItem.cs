@@ -12,5 +12,4 @@ public class DuoDoItem
     public DateTime CreatedAt { get; set; }
     public DateTime? DueDate { get; set; }
     public string Priority { get; set; } // e.g., "High", "Medium", "Low"
-
 }

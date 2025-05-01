@@ -1,3 +1,4 @@
+using Blazored.LocalStorage;
 using DuoDoBlazor.Components;
 
 namespace DuoDoBlazor;
@@ -11,6 +12,7 @@ public class Program
         // Add services to the container.
         builder.Services.AddRazorComponents()
             .AddInteractiveServerComponents();
+        builder.Services.AddBlazoredLocalStorage();
 
         var app = builder.Build();
 

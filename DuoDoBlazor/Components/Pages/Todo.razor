@@ -1,30 +1,33 @@
 ﻿@page "/todo"
+@using DuoDoBlazor.Models
 @rendermode InteractiveServer
 
-<h3>Todo (@todos.Count(todo => !todo.IsDone))</h3>
+<div class="container position-relative">
+    <h3>Du har @todos.Count(todo => !todo.IsDone) saker att göra klart!</h3>
+    <ul class="list-unstyled list-group mb-3" role="list">
+        @foreach (var todo in todos)
+        {
+            <li class="list-group-item d-inline-flex justify-content-between">
+                <input @bind="todo.Task" />
+                <input type="checkbox" class="form-check form-check-input" @bind="todo.IsDone" />
+                <hr />
+            </li>        }
+    </ul>
 
-<ul>
-    @foreach (var todo in todos)
-    {
-        <li>
-            <input type="checkbox" @bind="todo.IsDone" />
-            <input @bind="todo.Title" />
-        </li>
-    }
-</ul>
-
-<input @bind="newTodo" />
-<button @onclick="AddTodo">Add todo</button>
+    <input @bind="newTodo" />
+    <button @onclick="AddTodo">Add todo</button>
+    <button class="btn btn-primary position-absolute bottom-0 end-0 z-1" @onclick="AddTodo">+</button>
+</div>
 
 @code {
-    private List<TodoItem> todos = new();
-    string newTodo = "";
+    private List<DuoDoItem> todos = new();
+    private string newTodo = string.Empty;
 
     void AddTodo()
     {
         if (!string.IsNullOrWhiteSpace(newTodo))
         {
-            todos.Add(new TodoItem { Title = newTodo });
+            todos.Add(new DuoDoItem { Task = newTodo });
             newTodo = string.Empty;
         }
     }
